@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  p Enter Heisig # of Kanji
+  form#formHeisig(name="heisig", method="post", action="/heisig/")
+    input#inputHeisig(type="number", placeholder="Heisig #", name="heisig")
+    button#btnSubmit(type="submit") To Jisho!
+
